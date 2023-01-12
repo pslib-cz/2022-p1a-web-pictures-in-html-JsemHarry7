@@ -11,10 +11,37 @@
         <h1>Vkládání obrázku do stránky</h1>
     </header>
     <section>
+        <h2>Srovnání kvality</h2>
+        <ul>
+            <li>Originál - 433kB</li>
+            <li>WebP - 1,36MB</li>
+            <li>AVIF - 1,7MB</li>
+        </ul>
+    </section>
+    <section>
         <h2>Originál</h2>
         <div>
             <img src="./images/Kasteel_de_Haar.jpg" alt="Originální verze obrázku" />
         </div>
+        <h2>JPG pod 80kB</h2>
+        <div>
+            <img src="./images/Kasteel_de_Haar_low.jpg" alt="JPG pod 80kB" />            
+        </div>
+        <h2>WEBP pod 80kB</h2>
+        <div>
+            <img src="./images/Kasteel_de_Haar.webp" alt="WEBP pod 80kB" />            
+        </div>
+        <h2>AVIF pod 80kB</h2>
+        <div>
+            <img src="./images/Kasteel_de_Haar.avif" alt="AVIF pod 80kB" />            
+        </div>
+    </section>
+    <section>
+        <img srcset="./images/Kasteel_de_Haar_540.jpg 540w,
+        ./images/Kasteel_de_Haar_768.jpg 768w, 
+        ./images/Kasteel_de_Haar_540.jpg 960w" 
+        sizes="(max-width:540) 540px,
+        (max-width: 768) 768px, 960px">
     </section>
 </body>
 </html>
